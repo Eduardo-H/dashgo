@@ -1,6 +1,6 @@
-import { Avatar, Box, Flex, Icon, Menu, MenuButton, MenuItem, MenuList, Text } from '@chakra-ui/react';
 import React from 'react';
-import { BsChevronDown } from 'react-icons/bs';
+import NextLink from 'next/link';
+import { Avatar, Box, Flex, Icon, Link, Menu, MenuButton, MenuItem, MenuList, Text } from '@chakra-ui/react';
 import { AiOutlineUser } from 'react-icons/ai';
 import { IoExitOutline } from 'react-icons/io5';
 
@@ -37,8 +37,12 @@ export function Profile({ showProfileData }: ProfileProps) {
             Profile
           </MenuItem>
           <MenuItem>
-            <Icon as={IoExitOutline} mr="2" />
-            Logout
+            <NextLink href="/">
+              <Link _hover={{ textDecoration: "none" }}>
+                <Icon as={IoExitOutline} mr="2" />
+                Logout
+              </Link>
+            </NextLink>
           </MenuItem>
         </MenuList>
       </Menu>
