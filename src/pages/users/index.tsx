@@ -55,7 +55,7 @@ export default function UserList() {
       <Flex w="100%" my="6" maxW={1480} mx="auto" px="6">
         <Sidebar />
 
-        <Box flex="1" borderRadius={8} bg="gray.800" p="8">
+        <Box w="100%" flex="1" borderRadius={8} bg="gray.800" p="8">
           <Flex mb="8" justify="space-between" align="center">
             <Heading size="lg" fontWeight="normal">
               Usuários
@@ -86,7 +86,7 @@ export default function UserList() {
             </Flex>
           ) : (
             <>
-              <Table colorScheme="whiteAlpha">
+              <Table colorScheme="whiteAlpha" overflowX="scroll">
                 <Thead>
                   <Tr>
                     <Th px={["4", "4", "6"]} color="gray.300" w="8">

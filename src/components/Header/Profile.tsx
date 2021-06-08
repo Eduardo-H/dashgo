@@ -31,7 +31,7 @@ export function Profile({ showProfileData }: ProfileProps) {
           src="https://github.com/Eduardo-H.png"
           cursor="pointer"
         />
-        <MenuList textColor="gray.800">
+        {/* <MenuList textColor="gray.800">
           <MenuItem>
             <Icon as={AiOutlineUser} mr="2" />
             Profile
@@ -44,7 +44,7 @@ export function Profile({ showProfileData }: ProfileProps) {
               </Link>
             </NextLink>
           </MenuItem>
-        </MenuList>
+        </MenuList> */}
       </Menu>
     </Flex>
   );
