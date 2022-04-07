@@ -55,8 +55,12 @@ const options = {
   },
 };
 
-const series = [
-  { name: 'series1', data: [31, 120, 10, 28, 61, 18, 109] }
+const subscriptionSeries = [
+  { name: 'subscription', data: [31, 120, 10, 28, 61, 18, 109] }
+]
+
+const openSeries = [
+  { name: 'open', data: [500, 624, 321, 415, 782, 485, 800] }
 ]
 
 export default function Dashboard() {
@@ -75,7 +79,7 @@ export default function Dashboard() {
             pb="4"
           >
             <Text fontSize="lg" mb="4">Incritos da semana</Text>
-            <Chart options={options} series={series} type="area" height={160} />
+            <Chart options={options} series={subscriptionSeries} type="area" height={160} />
           </Box>
           <Box
             p={["6", "8"]}
@@ -84,7 +88,7 @@ export default function Dashboard() {
             pb="4"
           >
             <Text fontSize="lg" mb="4">Taxa de abertura</Text>
-            <Chart options={options} series={series} type="area" height={160} />
+            <Chart options={options} series={openSeries} type="area" height={160} />
           </Box>
         </SimpleGrid>
       </Flex>
